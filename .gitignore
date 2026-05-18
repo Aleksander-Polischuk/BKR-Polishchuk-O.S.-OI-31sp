@@ -1,0 +1,27 @@
+# --- Delphi ---
+*.dcu
+*.~*
+*.local
+*.identcache
+*.tvsconfig
+__history/
+__recovery/
+Win32/
+Win64/
+ModelSupport_*/
+
+# --- C++ / Visual Studio / CMake ---
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.ncb
+*.suo
+*.sln
+*.user
+Debug/
+Release/
+x64/
+x86/
+.vs/
