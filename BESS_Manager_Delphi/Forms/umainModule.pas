@@ -30,7 +30,7 @@ const
   gbNameIniFileProgram  = 'nesting.ini';
 
   gbDefaultUser     = 'app';
-  gbDefaultPassword = 'fqu0PS8NTmsr';
+  gbDefaultPassword = '/**/';
   gbDefaultPort     = '';
 
 type
@@ -270,10 +270,10 @@ begin
   // Читаємо nesting.ini. Якщо файлу або ключа немає - беремо дефолтні значення
   Ini := TIniFile.Create(AppPath + gbNameIniFileProgram);
   try
-    gbServer   := Ini.ReadString('MAIN', 'SERVER', '192.168.2.220');
-    gbDatabase := Ini.ReadString('MAIN', 'DATABASE', 'D:\ALex\Диплом\NESTINGDB_3.fdb');
-    gbPort     := Ini.ReadString('MAIN', 'Port', '3051');
-    gbPassword := Ini.ReadString('MAIN', 'PASSWORD', gbDefaultPassword); // Підтягуємо константу 'fqu0PS8NTmsr', якщо порожньо
+    gbServer   := Ini.ReadString('MAIN', 'SERVER', '/**/');
+    gbDatabase := Ini.ReadString('MAIN', 'DATABASE', '/**/');
+    gbPort     := Ini.ReadString('MAIN', 'Port', '/**/');
+    gbPassword := Ini.ReadString('MAIN', 'PASSWORD', gbDefaultPassword); // Підтягуємо константу '/**/', якщо порожньо
   finally
     Ini.Free;
   end;
