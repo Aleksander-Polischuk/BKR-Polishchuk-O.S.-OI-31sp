@@ -4,14 +4,14 @@ object mainModule: TmainModule
   object cnFBConnect: TFDConnection
     Params.Strings = (
       'User_Name=APP'
-      'Password=fqu0PS8NTmsr'
+      'Password=/**/'
       'CharacterSet=WIN1251'
       'IBAdvanced=config=WireCompression=true'
       'RoleName=application'
       'Protocol=TCPIP'
-      'Database=D:\ALex\'#1044#1080#1087#1083#1086#1084'\NESTINGDB_3.FDB'
-      'Port=3051'
-      'Server=192.168.2.220'
+      'Database=/**/'
+      'Port=/**/'
+      'Server=/**/'
       'DriverID=FB')
     UpdateOptions.AssignedValues = [uvEDelete, uvEInsert, uvEUpdate]
     UpdateOptions.EnableDelete = False
@@ -25,14 +25,14 @@ object mainModule: TmainModule
   object cnFBConnectWrite: TFDConnection
     Params.Strings = (
       'User_Name=APP'
-      'Password=fqu0PS8NTmsr'
+      'Password=/**/'
       'CharacterSet=WIN1251'
       'IBAdvanced=config=WireCompression=true'
       'RoleName=application'
       'Protocol=TCPIP'
-      'Database=D:\ALex\'#1044#1080#1087#1083#1086#1084'\NESTINGDB_3.FDB'
-      'Server=192.168.2.220'
-      'Port=3051'
+      'Database=/**/'
+      'Server=/**/'
+      'Port=/**/'
       'DriverID=FB')
     TxOptions.Isolation = xiReadCommitted
     TxOptions.DisconnectAction = xdRollback
